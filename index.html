@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc d'Endevinar la Paraula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Joc d'Endevinar la Paraula</h1>
+        <div class="input-container">
+            <input id="paraula" type="password" placeholder="Escriu la paraula" maxlength="10">
+            <button onclick="toggleVisibility()">👁️</button>
+        </div>
+        <button id="comencar-partida" onclick="comencarPartida()">Començar partida</button>
+        <div id="intents-container">
+            <img id="intents-img" src="imagenes/img_0.jpg" alt="Intents restants">
+        </div>
+    </header>
+    
+    <main>
+        <div id="display-lletres" class="lletres-container"></div>
+        <div id="botons-container" class="botons-container"></div>
+        
+        <!-- Informació de l'usuari -->
+        <div id="estadistiques">
+            <p id="punts">Punts: 0</p>
+            <p id="partides-guanyades">Partides guanyades: 0</p>
+            <p id="percentatge">Percentatge guanyades: 0%</p>
+            <p id="partida-mes-punts">Partida amb més punts: </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
